@@ -1,0 +1,18 @@
+{
+    "last_long_sleep_time": 1751771393.341808,
+    "next_long_sleep": 1751846778.341808,
+    "long_sleep_duration": 22778,
+    "long_sleep_delay": 1,
+    "long_sleep_tries": 0,
+    "last_afk_time": 1751771393.342815,
+    "next_afk_sleep": 1751787827.342815,
+    "afk_sleep_duration": 1436,
+    "afk_sleep_delay": 1,
+    "afk_sleep_tries": 0,
+    "last_short_sleep": 1751771393.343812,
+    "next_short_sleep": 1751774804.343812,
+    "short_sleep_duration": 43,
+    "short_sleep_delay": 10,
+    "short_sleep_tries": 0,
+    "update_time": 1751771393.343812
+}

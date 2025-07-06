@@ -3952,6 +3952,228 @@ class HolyRelicTotemNecromancer(Build):
         break
     self.attacking_skill.release()
     return res
+  
+class CWSChieftain(Build):
+  '''
+  CWSChieftain
+  '''
+  poe_bot: PoeBot
+  def __init__(self,poe_bot: PoeBot) -> None:
+    self.poe_bot = poe_bot
+    self.attacking_skill_last_use_pos = [0,0]
+    self.movement_skill_uses_after_attack = 0
+
+    self.righteous_fire = None # "blood_rage"
+    self.attacking_skill = None #"poisonous_concoction_alt_x"
+    self.plague_bearer = None # "corrosive_shroud"
+    self.debuff = None # "despair"
+    self.movement_skill = None # "new_new_shield_charge"
+    self.movement_skill_last_use_time = 0
+    
+    self.instant_movement_skill = None 
+    self.malevolance_blessing = None
+
+    self.swapWeaponsIfNeeded()
+    skills_data = poe_bot.backend.getSkillBar()
+
+    #TODO
+    for skill_index in range(len(skills_data['i_n'])):
+      skill = skills_data['i_n'][skill_index]
+
+      if skill == '':
+        continue
+      print(skill, skill_index)
+      if skill == 'righteous_fire':
+        self.righteous_fire = SkillWithDelay(poe_bot=poe_bot, skill_index=skill_index, min_delay= random.randint(30,50)/10, display_name="righteous_fire")
+      if skill == 'fire_trap':
+        self.attacking_skill = SkillWithDelay(poe_bot=poe_bot, skill_index=skill_index, min_delay=random.randint(1,5)/100, display_name=skill, min_mana_to_use=0)
+      # elif skill == 'despair' or skill == "temporal_chains":
+      #   self.debuff = AreaSkill(poe_bot=poe_bot, skill_index=skill_index, display_name=skill)
+      # elif skill == 'plague_bearer':
+      #   self.plague_bearer = PlagueBearer(poe_bot=poe_bot, skill_index=skill_index, display_name=skill)
+      elif skill in NON_INSTANT_MOVEMENT_SKILLS:
+        self.movement_skill = MovementSkill(poe_bot=poe_bot, skill_index=skill_index, display_name=skill, min_delay=random.randint(30,50)/100)
+      elif skill in INSTANT_MOVEMENT_SKILLS:
+        self.instant_movement_skill = MovementSkill(poe_bot=poe_bot, skill_index=skill_index, display_name=skill, min_delay=random.randint(26,30)/100)
+      elif skill == 'damage_over_time_aura' and skill_index < 8:
+            print(f'got malevolance on first panel, seems to be buff')
+            self.malevolance_blessing = SkillWithDelay(poe_bot=poe_bot, skill_index=skill_index, min_delay=9, display_name='malevolance_blessing')
+
+    super().__init__(poe_bot)
+    self.auto_flasks = AutoFlasks(poe_bot=poe_bot, pathfinder=False)
+  def useBuffs(self):
+    poe_bot = self.poe_bot
+    if self.righteous_fire is not None:
+      if 'righteous_fire' not in poe_bot.game_data.player.buffs:
+        if self.righteous_fire.use() is True:
+          return True
+        
+    if self.malevolance_blessing is not None:
+      if self.malevolance_blessing.checkIfCanUse() is True:
+        force_use = not 'player_aura_damage_over_time' in poe_bot.game_data.player.buffs
+        if self.malevolance_blessing.use(force=force_use) is True:
+          return True
+
+
+    return False
+  
+
+  def useFlasks(self):
+    self.auto_flasks.useFlasks()
+  def usualRoutine(self, mover:Mover = None):
+    poe_bot = self.poe_bot
+    used_smth = False
+    used_smth = self.auto_flasks.useFlasks()
+    movement_skill_to_use = self.movement_skill
+    min_movement_skill_uses = 3
+    # if we are moving
+    if mover is not None:
+      if used_smth != True: 
+        used_smth = self.useBuffs()
+      nearby_enemies = list(filter(lambda e: e.isInRoi(), poe_bot.game_data.entities.attackable_entities))
+      print(f'nearby_enemies: {nearby_enemies}')
+      really_close_enemies = list(filter(lambda e: e.distance_to_player < 20,nearby_enemies))
+      min_delay = 3
+      if len(really_close_enemies) != 0:
+        min_delay = 2
+        # if self.plague_bearer and used_smth != True:
+        #   print(f'can turn plague bearer')
+        #   used_smth = self.plague_bearer.turnOn()
+        # if self.instant_movement_skill:
+        #   movement_skill_to_use = self.instant_movement_skill
+      if used_smth != False:
+        return False
+      can_attack = False
+      for i in range(1):
+        if self.attacking_skill.last_use_time + min_delay < time.time():
+          can_attack = True
+          break
+        if self.movement_skill_uses_after_attack > min_movement_skill_uses:
+          can_attack = True
+          break
+        if dist([poe_bot.game_data.player.grid_pos.x, poe_bot.game_data.player.grid_pos.y], self.attacking_skill_last_use_pos) > 60:
+          can_attack = True
+          break
+      if can_attack != False:
+        print('can attack')
+        enemy_to_attack = None
+        if len(really_close_enemies) != 0:
+          really_close_enemies = list(filter(lambda e: e.isInLineOfSight() is True, really_close_enemies))
+          if really_close_enemies != []:
+            enemy_to_attack = really_close_enemies[0]
+        elif len(nearby_enemies):
+          search_angle_half = 45
+          nearby_enemies = sorted(nearby_enemies, key=lambda e: e.distance_to_player)
+          nearby_enemies = list(filter(lambda e: e.isInLineOfSight() is True, nearby_enemies))
+          p0 = (mover.grid_pos_to_step_x, mover.grid_pos_to_step_y)
+          p1 = (poe_bot.game_data.player.grid_pos.x, poe_bot.game_data.player.grid_pos.y)
+          nearby_enemies = list(filter(lambda e: getAngle(p0, p1, (e.grid_position.x, e.grid_position.y), abs_180=True) < search_angle_half, nearby_enemies))
+          if len(nearby_enemies) != 0:
+            list(map(lambda e:e.calculateValueForAttack(15), nearby_enemies))
+            nearby_enemies.sort(key=lambda e: e.attack_value, reverse=True)
+            enemy_to_attack = nearby_enemies[0]
+        # tap
+        if enemy_to_attack is not None:
+          if self.attacking_skill.use(updated_entity=enemy_to_attack) is True:
+            self.attacking_skill.last_use_time = time.time()
+            self.attacking_skill_last_use_pos = [poe_bot.game_data.player.grid_pos.x, poe_bot.game_data.player.grid_pos.y]
+            self.movement_skill_uses_after_attack = random.randint(0, (min_movement_skill_uses-1) )
+            return True
+      # use movement skill
+      if movement_skill_to_use and mover.distance_to_target > 50 and self.movement_skill_last_use_time + random.randint(10,20)/100 < time.time():
+        if movement_skill_to_use.use(mover.grid_pos_to_step_x, mover.grid_pos_to_step_y, wait_for_execution=False) is True:
+          self.movement_skill_uses_after_attack += 1
+          self.movement_skill_last_use_time = time.time()
+          return True
+    # if we are staying and waiting for smth
+    else:
+      self.staticDefence()
+
+    return False
+  def prepareToFight(self, entity: Entity):
+    return True
+  def killUsual(self, entity:Entity, is_strong = False, max_kill_time_sec = random.randint(200,300)/10, *args, **kwargs):
+    print(f'#RF.killUsual {entity}')
+    poe_bot = self.poe_bot
+
+    entity_to_kill_id = entity.id
+
+    min_distance = 45 # distance which is ok to start attacking
+    min_hold_duration = max_kill_time_sec
+    whirling_blades_delay = 1.2
+
+    entity_to_kill = next((e for e in poe_bot.game_data.entities.attackable_entities if e.id == entity_to_kill_id), None)
+    if not entity_to_kill:
+      print('cannot find desired entity to kill')
+      return True
+    print(f'entity_to_kill {entity_to_kill}')
+    distance_to_entity = dist( (entity_to_kill.grid_position.x, entity_to_kill.grid_position.y), (poe_bot.game_data.player.grid_pos.x, poe_bot.game_data.player.grid_pos.y) ) 
+    print(f'distance_to_entity {distance_to_entity} in killUsual')
+
+
+    if distance_to_entity > min_distance:
+      print('getting closer in killUsual ')
+      return False
+    if entity_to_kill.isInLineOfSight() is False:
+      print('entity_to_kill.isInLineOfSight() is False')
+      return False
+
+    self.auto_flasks.useFlasks()
+    start_time = time.time()
+    self.attacking_skill.press()
+    entity_to_kill.hover(wait_till_executed=False)
+    poe_bot.last_action_time = 0
+    res = True 
+    if self.instant_movement_skill:
+      self.instant_movement_skill.last_use_time = time.time()
+    debuff_use_time = 0
+    while True:
+      skill_used = False
+      poe_bot.refreshInstanceData()
+      used_smth = self.auto_flasks.useFlasks()
+      if used_smth != True: 
+        used_smth = self.useBuffs()
+      entity_to_kill = next((e for e in poe_bot.game_data.entities.attackable_entities if e.id == entity_to_kill_id), None)
+      if not entity_to_kill:
+        print('cannot find desired entity to kill')
+        break
+      print(f'entity_to_kill {entity_to_kill}')
+      if entity_to_kill.life.health.current < 1:
+        print('entity is dead')
+        break
+      distance_to_entity = dist( (entity_to_kill.grid_position.x, entity_to_kill.grid_position.y), (poe_bot.game_data.player.grid_pos.x, poe_bot.game_data.player.grid_pos.y) ) 
+      print(f'distance_to_entity {distance_to_entity} in killUsual')
+      if distance_to_entity > min_distance:
+        print('getting closer in killUsual ')
+        res = False
+        break
+      current_time = time.time()
+      entity_to_kill.hover(wait_till_executed=False)
+      if self.plague_bearer and used_smth != True:
+        print(f'can turn plague bearer')
+        used_smth = self.plague_bearer.turnOn()
+      if self.debuff and used_smth != True:
+        if current_time > start_time + 2:
+          if current_time > debuff_use_time + 4:
+            if self.debuff.use(entity_to_kill.grid_position.x, entity_to_kill.grid_position.y) is True:
+              debuff_use_time = time.time()
+              print(f'used debuff {self.debuff.display_name} at {time.time()}')
+              used_smth = True
+      if self.instant_movement_skill != None:
+        if used_smth != True:
+          if current_time > self.instant_movement_skill.last_use_time + whirling_blades_delay:
+            can_use_instant_skill = self.instant_movement_skill.checkIfCanUse()
+            print(f'removeme self.instant_movement_skill {self.instant_movement_skill}')
+            if can_use_instant_skill != False:
+              self.instant_movement_skill.tap(wait_till_executed=True)
+              self.instant_movement_skill.last_use_time = time.time() + random.randint(10,30)/100
+      if current_time  > start_time + min_hold_duration:
+        print(f'exceed time min_hold_duration {min_hold_duration}')
+        break
+    self.attacking_skill.release()
+    return res
+
+
 class PoisonConcBouncingPf(Build):
   '''
   PoisonConcBouncingPf
@@ -4858,6 +5080,7 @@ COMBAT_BUILDS = {
   "PoisonConcBouncingPf": PoisonConcBouncingPf,
   "GenericHitter": GenericHitter,
   "Bama": Bama,
+  "CWSChieftain": CWSChieftain,
 }
 COMBAT_BUILDS_LIST = list(COMBAT_BUILDS.keys())
 def getBuild(build:str):
