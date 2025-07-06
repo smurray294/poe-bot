@@ -1078,7 +1078,7 @@ class MapDevice:
           self.items.append(MapDeviceItem(self.poe_bot, item))
     else:
       self.activate_button_pos = None
-    self.kirak_missions_count = updated_data['k_m_c']
+    self.kirak_missions_count = updated_data.get('k_m_c', [0, 0, 0, 0])  # Default to no missions
     self.raw:dict = updated_data
   def open(self):
     print(f'[ui.MapDevice.open] call {time.time()}')

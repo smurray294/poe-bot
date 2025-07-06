@@ -9,10 +9,10 @@
     "afk_sleep_duration": 1436,
     "afk_sleep_delay": 1,
     "afk_sleep_tries": 0,
-    "last_short_sleep": 1751771393.343812,
-    "next_short_sleep": 1751774804.343812,
-    "short_sleep_duration": 43,
-    "short_sleep_delay": 10,
-    "short_sleep_tries": 0,
-    "update_time": 1751771393.343812
+    "last_short_sleep": 1751781533.336769,
+    "next_short_sleep": 1751783066.336769,
+    "short_sleep_duration": 60,
+    "short_sleep_delay": 12,
+    "short_sleep_tries": 2,
+    "update_time": 1751786325.5383346
 }

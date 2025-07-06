@@ -1434,37 +1434,55 @@ public class ShareData : BaseSettingsPlugin<ShareDataSettings>
         }
 
         // 4 or 5 slot map device
-        var fifth_slot_visible = GameController.IngameState.IngameUi.MapDeviceWindow.Children[5].Children[8].IsVisible;
+        // var fifth_slot_visible = GameController.IngameState.IngameUi.MapDeviceWindow.Children[5].Children[8].IsVisible;
         List<InventoryObjectCustom_c> items  = new List<InventoryObjectCustom_c>();
-        int i_start = 1;
-        int i_end = 5;
-        if (fifth_slot_visible != true){
-            map_device_info.slots_count = 4;
-        } else {
-            map_device_info.slots_count = 5;
-            i_start = 8;
-            i_end = 13;
-        }
-        // get info about items in slots
-        for (int i = i_start; i < i_end; i++){
+        // int i_start = 1;
+        // int i_end = 5;
+        // if (fifth_slot_visible != true){
+        //     map_device_info.slots_count = 4;
+        // } else {
+        //     map_device_info.slots_count = 5;
+        //     i_start = 8;
+        //     i_end = 13;
+        // }
+        // The values for your 6-slot map device
+        map_device_info.slots_count = 6;
+        int i_start = 8;
+        int i_end = 14;
+
+        // Get info about items in slots
+        for (int i = i_start; i < i_end; i++)
+        {
             InventoryObjectCustom_c item = new InventoryObjectCustom_c();
-            try {
-                Element item_info = null;
-                if (map_device_info.slots_count == 4){
-                    item_info = GameController.IngameState.IngameUi.MapDeviceWindow.Children[5].Children[7].Children[i];
-                } else {
-                    item_info = GameController.IngameState.IngameUi.MapDeviceWindow.Children[5].Children[i].Children[1];
+            try
+            {
+                // Get the parent element for the current map slot
+                var slotElement = GameController.IngameState.IngameUi.MapDeviceWindow.Children[7].Children[i];
+
+                // --- THE FIX ---
+                // Check if the slot has more than one child. If so, an item is present at index 1.
+                if (slotElement.ChildCount > 1)
+                {
+                    Element item_info = slotElement.Children[1];
+                    
+                    // This code only runs if an item is actually in the slot
+                    item = convertItem(item_info.Entity);
+                    var item_rect = item_info.GetClientRect();
+                    item.s = new List<int> {
+                        (int)item_rect.X,
+                        (int)(item_rect.X + item_rect.Width),
+                        (int)item_rect.Y,
+                        (int)(item_rect.Y + item_rect.Height),
+                    };
                 }
-                item = convertItem(item_info.Entity);
-                var item_rect = item_info.GetClientRect();
-                item.s = new List<int> {
-                    (int)item_rect.X, 
-                    (int)(item_rect.X + item_rect.Width), 
-                    (int)item_rect.Y, 
-                    (int)(item_rect.Y + item_rect.Height), 
-                };
-            } catch (Exception ex){
-                // DebugWindow.LogMsg($"sharedata mapDeviceInfo for items -> {ex}");
+                // If the slot is empty, the 'if' block is skipped,
+                // and a default empty 'item' object will be added to the list below.
+            }
+            catch (Exception ex)
+            {
+                // This catch block is now just a safety net for unexpected errors,
+                // not for handling empty slots.
+                DebugWindow.LogMsg($"sharedata mapDeviceInfo for items -> UNEXPECTED_ERROR: {ex}");
             }
             items.Add(item);
         }
@@ -1472,7 +1490,7 @@ public class ShareData : BaseSettingsPlugin<ShareDataSettings>
 
         // map crafted mods window
         map_device_info.c_m_p = new Posx1x2y1y2();
-        var map_device_craft_window_element = GameController.IngameState.IngameUi.MapDeviceWindow.Children[2].Children[0].Children[0]; 
+        var map_device_craft_window_element = GameController.IngameState.IngameUi.MapDeviceWindow.Children[3].Children[0].Children[0]; 
         map_device_info.c_m_p.x1 = (int)map_device_craft_window_element.GetClientRect().X;
         map_device_info.c_m_p.x2 = (int)(map_device_craft_window_element.GetClientRect().X + map_device_craft_window_element.GetClientRect().Width);
         map_device_info.c_m_p.y1 = (int)map_device_craft_window_element.GetClientRect().Y;
@@ -1495,41 +1513,41 @@ public class ShareData : BaseSettingsPlugin<ShareDataSettings>
 
         // activation button position
         map_device_info.a_b_p = new Posx1x2y1y2();
-        var activate_button_element = GameController.IngameState.IngameUi.MapDeviceWindow.Children[5].Children[1];
+        var activate_button_element = GameController.IngameState.IngameUi.MapDeviceWindow.Children[7].Children[1];
         map_device_info.a_b_p.x1 = (int)activate_button_element.GetClientRect().X;
         map_device_info.a_b_p.x2 = (int)(activate_button_element.GetClientRect().X + activate_button_element.GetClientRect().Width);
         map_device_info.a_b_p.y1 = (int)activate_button_element.GetClientRect().Y;
         map_device_info.a_b_p.y2 = (int)(activate_button_element.GetClientRect().Y + activate_button_element.GetClientRect().Height);
         
-        try {
-            map_device_info.k_m_c = new List<int>();
-            var kirak_missions_element = GameController.IngameState.IngameUi.MapDeviceWindow.ChooseMastersMods.Children[1];
-            for (int i = 1; i < 4; i++){
-                var kirak_mission_element = kirak_missions_element.Children[i];
-                map_device_info.k_m_c.Add(int.Parse(kirak_mission_element.Children[0].Text));
-            };
-        } catch (Exception ex){
-            DebugWindow.LogMsg($"sharedata map_device_info.k_m_c -> {ex}");
-        }
+        // try {
+        //     map_device_info.k_m_c = new List<int>();
+        //     var kirak_missions_element = GameController.IngameState.IngameUi.MapDeviceWindow.ChooseMastersMods.Children[1];
+        //     for (int i = 1; i < 4; i++){
+        //         var kirak_mission_element = kirak_missions_element.Children[i];
+        //         map_device_info.k_m_c.Add(int.Parse(kirak_mission_element.Children[0].Text));
+        //     };
+        // } catch (Exception ex){
+        //     DebugWindow.LogMsg($"sharedata map_device_info.k_m_c -> {ex}");
+        // }
 
 
-        try {
-        map_device_info.mc = new List<List<int>>();
-        var missions_element = GameController.IngameState.IngameUi.MapDeviceWindow.ChooseMastersMods;
-        foreach (var mission_element in missions_element.Children[0].Children){
-            List<int> counts = new();
-            foreach (var count_el in mission_element.Children[0].Children){
-                counts.Add(int.Parse(count_el.Children[0].Text));
-            }
-            map_device_info.mc.Add(counts);
-        }
-        } catch (Exception ex){
-            DebugWindow.LogMsg($"sharedata map_device_info.mc -> {ex}");
-        }
+        // try {
+        // map_device_info.mc = new List<List<int>>();
+        // var missions_element = GameController.IngameState.IngameUi.MapDeviceWindow.ChooseMastersMods;
+        // foreach (var mission_element in missions_element.Children[0].Children){
+        //     List<int> counts = new();
+        //     foreach (var count_el in mission_element.Children[0].Children){
+        //         counts.Add(int.Parse(count_el.Children[0].Text));
+        //     }
+        //     map_device_info.mc.Add(counts);
+        // }
+        // } catch (Exception ex){
+        //     DebugWindow.LogMsg($"sharedata map_device_info.mc -> {ex}");
+        // }
 
         try {
         map_device_info.i_p = new List<string>();
-        var invitations_panel_element = GameController.IngameState.IngameUi.MapDeviceWindow.Children[5].Children[2].Children;
+        var invitations_panel_element = GameController.IngameState.IngameUi.MapDeviceWindow.Children[7].Children[2].Children;
         var indexes_to_check = new List<int>{0,2};
         foreach (var invitation_element_index in indexes_to_check){
             var invitation_element = invitations_panel_element[invitation_element_index];

@@ -5,7 +5,7 @@ set unique_id=7d1165934e24534a1ba5_poe6
 set remote_ip=172.17.127.226
 set password=123
 set build_name=CWSChieftain
-set predefined_strategy=low_tier_incursion
+set predefined_strategy=atlas_explorer
 
 TITLE %machine% %remote_ip% %unique_id% %predefined_strategy% %build_name%
 :infinity_loop

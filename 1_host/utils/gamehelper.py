@@ -395,7 +395,8 @@ class Terrain:
 
   def update(self,refreshed_data:dict, refresh_visited = True):
     terrain_data = refreshed_data['terrain_string'].split('\r\n')[:-1]
-    img = np.asarray(list(map(lambda l: np.fromstring(l, 'int8'), terrain_data)))
+    #img = np.asarray(list(map(lambda l: np.fromstring(l, 'int8'), terrain_data)))
+    img = np.asarray(list(map(lambda l: np.frombuffer(l.encode('utf-8') if isinstance(l, str) else l, 'int8'), terrain_data)))
     self.terrain_image = img
     
     # 1 passable, 0 - non passable

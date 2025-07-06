@@ -342,6 +342,10 @@ class MapperSettings:
     for key, value in config.items():
       setattr(self, key, value )
 
+    # Ensure session_duration is always set as an instance attribute
+    if not hasattr(self, 'session_duration'):
+        self.session_duration = '16h'  # or use the default from globals.json
+
     if self.essences_can_corrupt is True:
       print(f'essences_can_corrupt is True, gonna keep remnant of corruption')
       self.keep_consumables.append('Remnant of Corruption')

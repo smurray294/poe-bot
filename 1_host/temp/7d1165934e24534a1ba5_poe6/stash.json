@@ -1,6 +1,2621 @@
 {
-    "stash_tabs_data": [],
-    "unsorted_items": [],
+    "stash_tabs_data": [
+        {
+            "last_update_time": 1751781485.3293622,
+            "tab_index": 0,
+            "items": [
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Ghastly Eye Jewel",
+                    "a": "Art/2DItems/Jewels/GhastlyEye.dds",
+                    "unique_name": "Enthralling Prism",
+                    "rarity": "Rare",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Jewels/JewelAbyssSummoner",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "+22 to maximum Life",
+                        "Regenerate 11.6 Life per second",
+                        "<rgb(0,204,0)>{Minions have +9% to Chaos Resistance}"
+                    ],
+                    "imr": [
+                        "AbyssJewelAddedLife1",
+                        "AbyssMinionChaosResistanceJewel1",
+                        "AbyssFlatLifeRegenerationJewel1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 1,
+                        "Y": 5
+                    },
+                    "LocationBottomRight": {
+                        "X": 2,
+                        "Y": 6
+                    },
+                    "TopLeft": {
+                        "X": 49,
+                        "Y": 277
+                    },
+                    "BottomRight": {
+                        "X": 86,
+                        "Y": 315
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Quicksilver Flask",
+                    "a": "Art/2DItems/Flasks/sprint.dds",
+                    "unique_name": "",
+                    "rarity": "Normal",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskUtility6",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 1,
+                        "Y": 8
+                    },
+                    "LocationBottomRight": {
+                        "X": 2,
+                        "Y": 10
+                    },
+                    "TopLeft": {
+                        "X": 49,
+                        "Y": 390
+                    },
+                    "BottomRight": {
+                        "X": 86,
+                        "Y": 465
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "R",
+                        "RBG"
+                    ],
+                    "tt": null,
+                    "Name": "Ironscale Gauntlets",
+                    "a": "Art/2DItems/Armours/Gloves/FleshAndSpirit.dds",
+                    "unique_name": "Flesh and Spirit",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Armours/Gloves/GlovesStrDex2",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "8% increased Attack Speed",
+                        "87% increased Armour and Evasion",
+                        "Regenerate 3.8 Life per second",
+                        "Recover 20% of Life on Rampage",
+                        "Kills grant an additional Vaal Soul if you have Rampaged Recently",
+                        "Rampage"
+                    ],
+                    "imr": [
+                        "HealOnRampageUniqueGlovesStrDex5",
+                        "VaalSoulsOnRampageUniqueGlovesStrDex5",
+                        "LocalIncreasedArmourAndEvasionUniqueGlovesStrDex5",
+                        "LifeRegenerationUniqueGlovesStrDex5",
+                        "IncreasedAttackSpeedUniqueGlovesStrDex5",
+                        "SimulatedRampageStrDex5"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 9,
+                        "Y": 5
+                    },
+                    "LocationBottomRight": {
+                        "X": 11,
+                        "Y": 7
+                    },
+                    "TopLeft": {
+                        "X": 348,
+                        "Y": 277
+                    },
+                    "BottomRight": {
+                        "X": 423,
+                        "Y": 352
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "A",
+                        "A"
+                    ],
+                    "tt": null,
+                    "Name": "Stygian Vise",
+                    "a": "Art/2DItems/Belts/DarknessEnthroned.dds",
+                    "unique_name": "Darkness Enthroned",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Belts/BeltAbyss",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "Has 1 Abyssal Socket",
+                        "Has 1 Abyssal Socket",
+                        "89% increased Effect of Socketed Abyss Jewels"
+                    ],
+                    "imr": [
+                        "AbyssJewelSocketImplicit",
+                        "AbyssJewelSocketUnique__6_",
+                        "AbyssJewelEffectUnique__1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 6
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 7
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 315
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 352
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Topaz Ring",
+                    "a": "Art/2DItems/Rings/Kikazaru.dds",
+                    "unique_name": "Kikazaru",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Rings/Ring5",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "LightningResistImplicitRing1",
+                        "ReducedCurseEffectUniqueRing26",
+                        "ManaRegenerationUniqueRing26",
+                        "AllAttributesUniqueRing26",
+                        "LifeRegenerationPerLevelUnique__1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 4,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 5,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 161,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 199,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "BRGG"
+                    ],
+                    "tt": null,
+                    "Name": "Leather Cap",
+                    "a": "Art/2DItems/Armours/Helmets/HelmetDexUnique2.dds",
+                    "unique_name": "Goldrim",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Armours/Helmets/HelmetDex1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "LocalIncreasedEvasionRatingPercentUniqueHelmetDex3",
+                        "AllResistancesUniqueHelmetDex3",
+                        "AttackerTakesDamageUniqueHelmetDex3",
+                        "ItemFoundRarityIncreaseUniqueHelmetDex3"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 9,
+                        "Y": 8
+                    },
+                    "LocationBottomRight": {
+                        "X": 11,
+                        "Y": 10
+                    },
+                    "TopLeft": {
+                        "X": 348,
+                        "Y": 390
+                    },
+                    "BottomRight": {
+                        "X": 423,
+                        "Y": 465
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Quartz Flask",
+                    "a": "Art/2DItems/Flasks/phaseflask01.dds",
+                    "unique_name": "",
+                    "rarity": "Magic",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskUtility8",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "0.4% of Spell Damage Leeched as Energy Shield during Effect"
+                    ],
+                    "imr": [
+                        "FlaskBuffSpellEnergyShieldLeechWhileHealing1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 4,
+                        "Y": 3
+                    },
+                    "LocationBottomRight": {
+                        "X": 5,
+                        "Y": 5
+                    },
+                    "TopLeft": {
+                        "X": 161,
+                        "Y": 203
+                    },
+                    "BottomRight": {
+                        "X": 199,
+                        "Y": 277
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "R"
+                    ],
+                    "tt": null,
+                    "Name": "Unset Ring",
+                    "a": "Art/2DItems/Rings/ThePariah.dds",
+                    "unique_name": "The Pariah",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Rings/Ring15",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "RingHasOneSocket",
+                        "LifePerRedSocketUniqueRing39",
+                        "EnergyShieldPerBlueSocketUniqueRing39",
+                        "ManaPerGreenSocketUniqueRing39",
+                        "LocalIncreaseSocketedGemLevelUniqueRing39",
+                        "AttackAndCastSpeedUniqueRing39",
+                        "ItemRarityPerWhiteSocketUniqueRing39"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 9
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 10
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 427
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 465
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Searching Eye Jewel",
+                    "a": "Art/2DItems/Jewels/SearchingEye.dds",
+                    "unique_name": "Ancient Portent",
+                    "rarity": "Rare",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Jewels/JewelAbyssRanged",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "+25 to maximum Life",
+                        "Regenerate 10 Life per second",
+                        "+13% to Lightning Resistance"
+                    ],
+                    "imr": [
+                        "AbyssJewelAddedLife1",
+                        "AbyssLightningResistanceJewel1",
+                        "AbyssFlatLifeRegenerationJewel1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 1,
+                        "Y": 11
+                    },
+                    "LocationBottomRight": {
+                        "X": 2,
+                        "Y": 12
+                    },
+                    "TopLeft": {
+                        "X": 49,
+                        "Y": 502
+                    },
+                    "BottomRight": {
+                        "X": 86,
+                        "Y": 540
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "R"
+                    ],
+                    "tt": null,
+                    "Name": "Unset Ring",
+                    "a": "Art/2DItems/Rings/ThePariah.dds",
+                    "unique_name": "The Pariah",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Rings/Ring15",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "RingHasOneSocket",
+                        "LifePerRedSocketUniqueRing39",
+                        "EnergyShieldPerBlueSocketUniqueRing39",
+                        "ManaPerGreenSocketUniqueRing39",
+                        "LocalIncreaseSocketedGemLevelUniqueRing39",
+                        "AttackAndCastSpeedUniqueRing39",
+                        "ItemRarityPerWhiteSocketUniqueRing39"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 8
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 9
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 390
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 427
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Righteous Fire",
+                    "a": "Art/2DItems/Gems/RighteousFire.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SkillGemRighteousFire",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 8
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 9
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 390
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 427
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "RB"
+                    ],
+                    "tt": null,
+                    "Name": "Driftwood Wand",
+                    "a": "Art/2DItems/Weapons/OneHandWeapons/Wands/Wand1.dds",
+                    "unique_name": "",
+                    "rarity": "Magic",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand1",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "10% increased Spell Damage",
+                        "+15% to Fire Damage over Time Multiplier"
+                    ],
+                    "imr": [
+                        "SpellDamageOnWeaponImplicitWand1",
+                        "FireDamageOverTimeMultiplier1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 5,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 6,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 199,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 236,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "RG"
+                    ],
+                    "tt": null,
+                    "Name": "Driftwood Wand",
+                    "a": "Art/2DItems/Weapons/OneHandWeapons/Wands/Wand1.dds",
+                    "unique_name": "",
+                    "rarity": "Magic",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "SpellDamageOnWeaponImplicitWand1",
+                        "LocalAddedLightningDamage1",
+                        "FireDamageOverTimeMultiplier1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 1,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 2,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 49,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 86,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Swift Affliction Support",
+                    "a": "Art/2DItems/Gems/Support/SupportRapidDecayGem.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemRapidDecay",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 1
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 2
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 128
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 165
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Lifetap Support",
+                    "a": "Art/2DItems/Gems/Support/LifeTap.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemLifetap",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 1
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 128
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Lifetap Support",
+                    "a": "Art/2DItems/Gems/Support/LifeTap.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemLifetap",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 11
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 12
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 502
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 540
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Burning Damage Support",
+                    "a": "Art/2DItems/Gems/Support/IncreasedBurnDuration.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemIncreasedBurningDamage",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 7
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 8
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 352
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 390
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Elemental Focus Support",
+                    "a": "Art/2DItems/Gems/Support/ElementalFocus.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemElementalFocus",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 5
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 6
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 277
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 315
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Swift Affliction Support",
+                    "a": "Art/2DItems/Gems/Support/SupportRapidDecayGem.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemRapidDecay",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 4
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 5
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 240
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 277
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Efficacy Support",
+                    "a": "Art/2DItems/Gems/Support/Efficacy.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemEfficacy",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 9
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 10
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 427
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 465
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Lifetap Support",
+                    "a": "Art/2DItems/Gems/Support/LifeTap.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemLifetap",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 11,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 12,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 423,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 461,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Trap and Mine Damage Support",
+                    "a": "Art/2DItems/Gems/Support/TrapAndMineDamage.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemTrapAndMineDamage",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 6
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 7
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 315
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 352
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Purity of Elements",
+                    "a": "Art/2DItems/Gems/Purity.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SkillGemPurity",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 4,
+                        "Y": 7
+                    },
+                    "LocationBottomRight": {
+                        "X": 5,
+                        "Y": 8
+                    },
+                    "TopLeft": {
+                        "X": 161,
+                        "Y": 352
+                    },
+                    "BottomRight": {
+                        "X": 199,
+                        "Y": 390
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Purity of Fire",
+                    "a": "Art/2DItems/Gems/FireResistAura.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SkillGemFireResistAura",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 7,
+                        "Y": 1
+                    },
+                    "LocationBottomRight": {
+                        "X": 8,
+                        "Y": 2
+                    },
+                    "TopLeft": {
+                        "X": 274,
+                        "Y": 128
+                    },
+                    "BottomRight": {
+                        "X": 311,
+                        "Y": 165
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Summon Stone Golem",
+                    "a": "Art/2DItems/Gems/RockGolem.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SkillGemSummonRockGolem",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 4,
+                        "Y": 8
+                    },
+                    "LocationBottomRight": {
+                        "X": 5,
+                        "Y": 9
+                    },
+                    "TopLeft": {
+                        "X": 161,
+                        "Y": 390
+                    },
+                    "BottomRight": {
+                        "X": 199,
+                        "Y": 427
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Elemental Proliferation Support",
+                    "a": "Art/2DItems/Gems/Support/ElementalProliferation.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemElementalProliferation",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 11,
+                        "Y": 7
+                    },
+                    "LocationBottomRight": {
+                        "X": 12,
+                        "Y": 8
+                    },
+                    "TopLeft": {
+                        "X": 423,
+                        "Y": 352
+                    },
+                    "BottomRight": {
+                        "X": 461,
+                        "Y": 390
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Combustion Support",
+                    "a": "Art/2DItems/Gems/Support/ChancetoIgnite.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemChanceToIgnite",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 5
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 6
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 277
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 315
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Lifetap Support",
+                    "a": "Art/2DItems/Gems/Support/LifeTap.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemLifetap",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 11,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 12,
+                        "Y": 1
+                    },
+                    "TopLeft": {
+                        "X": 423,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 461,
+                        "Y": 128
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "WWWWWW"
+                    ],
+                    "tt": null,
+                    "Name": "Simple Robe",
+                    "a": "Art/2DItems/Armours/BodyArmours/TabulaRasa.dds",
+                    "unique_name": "Tabula Rasa",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Armours/BodyArmours/BodyInt1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "ItemHasSixLinkedWhiteSocketsUniqueBodyInt6",
+                        "RemoveStatsFromTabulaRasa"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 9,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 11,
+                        "Y": 5
+                    },
+                    "TopLeft": {
+                        "X": 348,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 423,
+                        "Y": 277
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Quicksilver Flask",
+                    "a": "Art/2DItems/Flasks/sprint.dds",
+                    "unique_name": "",
+                    "rarity": "Normal",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskUtility6",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 7
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 9
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 352
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 427
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Ghastly Eye Jewel",
+                    "a": "Art/2DItems/Jewels/GhastlyEye.dds",
+                    "unique_name": "Whispering Gaze",
+                    "rarity": "Rare",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Jewels/JewelAbyssSummoner",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "+8 to all Attributes",
+                        "+15 to Intelligence",
+                        "+42 to Evasion Rating"
+                    ],
+                    "imr": [
+                        "AbyssIntelligenceJewel1",
+                        "AbyssFlatEvasionJewel1",
+                        "AbyssAllAttributesJewel1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 1,
+                        "Y": 6
+                    },
+                    "LocationBottomRight": {
+                        "X": 2,
+                        "Y": 7
+                    },
+                    "TopLeft": {
+                        "X": 49,
+                        "Y": 315
+                    },
+                    "BottomRight": {
+                        "X": 86,
+                        "Y": 352
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Ghastly Eye Jewel",
+                    "a": "Art/2DItems/Jewels/GhastlyEye.dds",
+                    "unique_name": "Whispering Gaze",
+                    "rarity": "Rare",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Jewels/JewelAbyssSummoner",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "AbyssIntelligenceJewel1",
+                        "AbyssFlatEvasionJewel1",
+                        "AbyssAllAttributesJewel1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 1,
+                        "Y": 7
+                    },
+                    "LocationBottomRight": {
+                        "X": 2,
+                        "Y": 8
+                    },
+                    "TopLeft": {
+                        "X": 49,
+                        "Y": 352
+                    },
+                    "BottomRight": {
+                        "X": 86,
+                        "Y": 390
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Amethyst Flask",
+                    "a": "Art/2DItems/Flasks/Amethyst.dds",
+                    "unique_name": "",
+                    "rarity": "Magic",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskUtility7",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "25% reduced Duration",
+                        "25% increased effect"
+                    ],
+                    "imr": [
+                        "FlaskEffectReducedDuration3"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 4,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 5,
+                        "Y": 2
+                    },
+                    "TopLeft": {
+                        "X": 161,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 199,
+                        "Y": 165
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "RRGG"
+                    ],
+                    "tt": null,
+                    "Name": "Rawhide Boots",
+                    "a": "Art/2DItems/Armours/Boots/BootsDexUnique3.dds",
+                    "unique_name": "Seven-League Step",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Armours/Boots/BootsDex1",
+                    "items_in_stack": 0,
+                    "item_mods": [
+                        "50% increased Movement Speed"
+                    ],
+                    "imr": [
+                        "MovementVelocityUnique___6"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 9,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 11,
+                        "Y": 2
+                    },
+                    "TopLeft": {
+                        "X": 348,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 423,
+                        "Y": 165
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Topaz Ring",
+                    "a": "Art/2DItems/Rings/Kikazaru.dds",
+                    "unique_name": "Kikazaru",
+                    "rarity": "Unique",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Rings/Ring5",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "LightningResistImplicitRing1",
+                        "ReducedCurseEffectUniqueRing26",
+                        "ManaRegenerationUniqueRing26",
+                        "AllAttributesUniqueRing26",
+                        "LifeRegenerationPerLevelUnique__1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 7,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 8,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 274,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 311,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Small Life Flask",
+                    "a": "Art/2DItems/Flasks/lifeflask1.dds",
+                    "unique_name": "",
+                    "rarity": "Normal",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskLife1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 2
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 165
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Small Life Flask",
+                    "a": "Art/2DItems/Flasks/lifeflask1.dds",
+                    "unique_name": "",
+                    "rarity": "Normal",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskLife1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 4
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 240
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Small Mana Flask",
+                    "a": "Art/2DItems/Flasks/manaflask1.dds",
+                    "unique_name": "",
+                    "rarity": "Normal",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskMana1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 6
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 8
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 315
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 390
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Small Mana Flask",
+                    "a": "Art/2DItems/Flasks/manaflask1.dds",
+                    "unique_name": "",
+                    "rarity": "Normal",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskMana1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 4
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 6
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 240
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 315
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": [
+                        "R",
+                        "B"
+                    ],
+                    "tt": null,
+                    "Name": "Twig Spirit Shield",
+                    "a": "Art/2DItems/Armours/Shields/ShieldInt1.dds",
+                    "unique_name": "Brood Star",
+                    "rarity": "Rare",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Armours/Shields/ShieldInt1",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "SpellDamageImplicitShield2",
+                        "IncreasedLife0",
+                        "ColdResist1",
+                        "IncreasedMana1",
+                        "LocalIncreasedEnergyShieldPercent1"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 10
+                    },
+                    "LocationBottomRight": {
+                        "X": 5,
+                        "Y": 12
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 465
+                    },
+                    "BottomRight": {
+                        "X": 199,
+                        "Y": 540
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Orb of Regret",
+                    "a": "Art/2DItems/Currency/CurrencyPassiveSkillRefund.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyPassiveRefund",
+                    "items_in_stack": 1,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 4
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 5
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 240
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 277
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Glassblower's Bauble",
+                    "a": "Art/2DItems/Currency/CurrencyFlaskQuality.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyFlaskQuality",
+                    "items_in_stack": 1,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 5,
+                        "Y": 6
+                    },
+                    "LocationBottomRight": {
+                        "X": 6,
+                        "Y": 7
+                    },
+                    "TopLeft": {
+                        "X": 199,
+                        "Y": 315
+                    },
+                    "BottomRight": {
+                        "X": 236,
+                        "Y": 352
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Instilling Orb",
+                    "a": "Art/2DItems/Currency/Expedition/FlaskInjector.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyInstillingOrb",
+                    "items_in_stack": 20,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 5,
+                        "Y": 7
+                    },
+                    "LocationBottomRight": {
+                        "X": 6,
+                        "Y": 8
+                    },
+                    "TopLeft": {
+                        "X": 199,
+                        "Y": 352
+                    },
+                    "BottomRight": {
+                        "X": 236,
+                        "Y": 390
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Quicksilver Flask",
+                    "a": "Art/2DItems/Flasks/sprint.dds",
+                    "unique_name": "",
+                    "rarity": "Normal",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskUtility6",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 1,
+                        "Y": 3
+                    },
+                    "LocationBottomRight": {
+                        "X": 2,
+                        "Y": 5
+                    },
+                    "TopLeft": {
+                        "X": 49,
+                        "Y": 203
+                    },
+                    "BottomRight": {
+                        "X": 86,
+                        "Y": 277
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Armourer's Scrap",
+                    "a": "Art/2DItems/Currency/CurrencyArmourQuality.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyArmourQuality",
+                    "items_in_stack": 2,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Ruby Flask",
+                    "a": "Art/2DItems/Flasks/ruby.dds",
+                    "unique_name": "",
+                    "rarity": "Magic",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskUtility2",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "FlaskBuffSpellEnergyShieldLeechWhileHealing3_____"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 9
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 11
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 427
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 502
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Glassblower's Bauble",
+                    "a": "Art/2DItems/Currency/CurrencyFlaskQuality.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyFlaskQuality",
+                    "items_in_stack": 20,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 5,
+                        "Y": 5
+                    },
+                    "LocationBottomRight": {
+                        "X": 6,
+                        "Y": 6
+                    },
+                    "TopLeft": {
+                        "X": 199,
+                        "Y": 277
+                    },
+                    "BottomRight": {
+                        "X": 236,
+                        "Y": 315
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Determination",
+                    "a": "Art/2DItems/Gems/Determination.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SkillGemDetermination",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 7,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 8,
+                        "Y": 1
+                    },
+                    "TopLeft": {
+                        "X": 274,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 311,
+                        "Y": 128
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Orb of Fusing",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketLinks.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketLinks",
+                    "items_in_stack": 2,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 1
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 128
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Orb of Alteration",
+                    "a": "Art/2DItems/Currency/CurrencyRerollMagic.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollMagic",
+                    "items_in_stack": 11,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Blacksmith's Whetstone",
+                    "a": "Art/2DItems/Currency/CurrencyWeaponQuality.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyWeaponQuality",
+                    "items_in_stack": 2,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 1
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 128
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Burning Damage Support",
+                    "a": "Art/2DItems/Gems/Support/IncreasedBurnDuration.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SupportGemIncreasedBurningDamage",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 8
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 9
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 390
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 427
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Orb of Fusing",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketLinks.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketLinks",
+                    "items_in_stack": 19,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 5,
+                        "Y": 10
+                    },
+                    "LocationBottomRight": {
+                        "X": 6,
+                        "Y": 11
+                    },
+                    "TopLeft": {
+                        "X": 199,
+                        "Y": 465
+                    },
+                    "BottomRight": {
+                        "X": 236,
+                        "Y": 502
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Jeweller's Orb",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketNumbers.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketNumbers",
+                    "items_in_stack": 20,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 7,
+                        "Y": 3
+                    },
+                    "LocationBottomRight": {
+                        "X": 8,
+                        "Y": 4
+                    },
+                    "TopLeft": {
+                        "X": 274,
+                        "Y": 203
+                    },
+                    "BottomRight": {
+                        "X": 311,
+                        "Y": 240
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Chromatic Orb",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketColours.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketColours",
+                    "items_in_stack": 11,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 1
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 2
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 128
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 165
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Orb of Chance",
+                    "a": "Art/2DItems/Currency/CurrencyUpgradeRandomly.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyUpgradeRandomly",
+                    "items_in_stack": 15,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 2
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 3
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 165
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 203
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Bladefall",
+                    "a": "Art/2DItems/Gems/RainOfBlades.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Gems/SkillGemBladefall",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 5
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 6
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 277
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 315
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Orb of Unmaking",
+                    "a": "Art/2DItems/Currency/RegretOrb.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyAtlasPassiveRefund",
+                    "items_in_stack": 2,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 5,
+                        "Y": 11
+                    },
+                    "LocationBottomRight": {
+                        "X": 6,
+                        "Y": 12
+                    },
+                    "TopLeft": {
+                        "X": 199,
+                        "Y": 502
+                    },
+                    "BottomRight": {
+                        "X": 236,
+                        "Y": 540
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Chromatic Orb",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketColours.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketColours",
+                    "items_in_stack": 20,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 2,
+                        "Y": 3
+                    },
+                    "LocationBottomRight": {
+                        "X": 3,
+                        "Y": 4
+                    },
+                    "TopLeft": {
+                        "X": 86,
+                        "Y": 203
+                    },
+                    "BottomRight": {
+                        "X": 124,
+                        "Y": 240
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Chromatic Orb",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketColours.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketColours",
+                    "items_in_stack": 20,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 11
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 12
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 502
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 540
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Chromatic Orb",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketColours.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketColours",
+                    "items_in_stack": 20,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 10
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 11
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 465
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 502
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Cartographer's Chisel",
+                    "a": "Art/2DItems/Currency/CurrencyMapQuality.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyMapQuality",
+                    "items_in_stack": 1,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 5,
+                        "Y": 4
+                    },
+                    "LocationBottomRight": {
+                        "X": 6,
+                        "Y": 5
+                    },
+                    "TopLeft": {
+                        "X": 199,
+                        "Y": 240
+                    },
+                    "BottomRight": {
+                        "X": 236,
+                        "Y": 277
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Jeweller's Orb",
+                    "a": "Art/2DItems/Currency/CurrencyRerollSocketNumbers.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollSocketNumbers",
+                    "items_in_stack": 3,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 6,
+                        "Y": 7
+                    },
+                    "LocationBottomRight": {
+                        "X": 7,
+                        "Y": 8
+                    },
+                    "TopLeft": {
+                        "X": 236,
+                        "Y": 352
+                    },
+                    "BottomRight": {
+                        "X": 274,
+                        "Y": 390
+                    },
+                    "tab_index": 0
+                },
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Chaos Orb",
+                    "a": "Art/2DItems/Currency/CurrencyRerollRare.dds",
+                    "unique_name": null,
+                    "rarity": null,
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 0,
+                    "RenderArt": "Metadata/Items/Currency/CurrencyRerollRare",
+                    "items_in_stack": 4,
+                    "item_mods": [],
+                    "imr": [],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 3,
+                        "Y": 4
+                    },
+                    "LocationBottomRight": {
+                        "X": 4,
+                        "Y": 5
+                    },
+                    "TopLeft": {
+                        "X": 124,
+                        "Y": 240
+                    },
+                    "BottomRight": {
+                        "X": 161,
+                        "Y": 277
+                    },
+                    "tab_index": 0
+                }
+            ]
+        },
+        {
+            "last_update_time": 1751781507.0480645,
+            "tab_index": 1,
+            "items": []
+        },
+        {
+            "last_update_time": 1751781487.137236,
+            "tab_index": 2,
+            "items": []
+        },
+        {
+            "last_update_time": 1751781497.3044755,
+            "tab_index": 3,
+            "items": [
+                {
+                    "l": null,
+                    "tt": null,
+                    "Name": "Quartz Flask",
+                    "a": "Art/2DItems/Flasks/phaseflask01.dds",
+                    "unique_name": "",
+                    "rarity": "Magic",
+                    "Class": null,
+                    "ItemType": null,
+                    "m_t": 0,
+                    "c": 0,
+                    "i": 1,
+                    "RenderArt": "Metadata/Items/Flasks/FlaskUtility8",
+                    "items_in_stack": 0,
+                    "item_mods": [],
+                    "imr": [
+                        "FlaskFullRechargeOnHit4_",
+                        "FlaskBuffAvoidChillFreeze5",
+                        "FlaskEnchantmentInjectorOnFullCharges__"
+                    ],
+                    "g": null,
+                    "s": null,
+                    "ti": 0,
+                    "LocationTopLeft": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "LocationBottomRight": {
+                        "X": 1,
+                        "Y": 2
+                    },
+                    "TopLeft": {
+                        "X": 12,
+                        "Y": 90
+                    },
+                    "BottomRight": {
+                        "X": 49,
+                        "Y": 165
+                    },
+                    "tab_index": 3
+                }
+            ]
+        }
+    ],
+    "unsorted_items": [
+        {
+            "l": null,
+            "tt": null,
+            "Name": "Quartz Flask",
+            "a": "Art/2DItems/Flasks/phaseflask01.dds",
+            "unique_name": "",
+            "rarity": "Magic",
+            "Class": null,
+            "ItemType": null,
+            "m_t": 0,
+            "c": 0,
+            "i": 1,
+            "RenderArt": "Metadata/Items/Flasks/FlaskUtility8",
+            "items_in_stack": 0,
+            "item_mods": [
+                "Gain 2 Charges when you are Hit by an Enemy",
+                "55% chance to Avoid being Chilled during Effect",
+                "52% chance to Avoid being Frozen during Effect"
+            ],
+            "imr": [
+                "FlaskFullRechargeOnHit4_",
+                "FlaskBuffAvoidChillFreeze5",
+                "FlaskEnchantmentInjectorOnFullCharges__"
+            ],
+            "g": [
+                11,
+                12,
+                0,
+                2
+            ],
+            "s": [
+                974,
+                1012,
+                418,
+                492
+            ],
+            "ti": 0,
+            "LocationTopLeft": null,
+            "LocationBottomRight": null,
+            "TopLeft": null,
+            "BottomRight": null
+        }
+    ],
     "affinities": {
         "blight": null,
         "currency": null,
@@ -9,11 +2624,11 @@
         "div_cards": null,
         "essence": null,
         "fragments": null,
-        "map": null,
+        "map": 1,
         "catalysts": null,
         "unique": null,
         "flask": null,
         "gem": null
     },
-    "update_time": 1751771393.3448164
+    "update_time": 1751781507.0480645
 }

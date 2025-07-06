@@ -1704,7 +1704,18 @@ class Mapper:
     self.poe_bot = poe_bot
     self.temp = MapsTempData(unique_id=poe_bot.unique_id, reset=force_reset_temp)
     self.settings = MapperSettings(strategy)
+
+    # Copy all settings as instance attributes
+    for attr_name in dir(self.settings):
+        if not attr_name.startswith('_'):  # Skip private attributes
+            setattr(self, attr_name, getattr(self.settings, attr_name))
+
     self.mapper_session_temp = MapperSession(unique_id=poe_bot.unique_id, session_duration = self.settings.session_duration)
+    self.collect_beasts_every_x_maps = 999  # or any reasonable number
+    self.map_priorities = []
+    self.force_deli = False
+
+
 
     try: self.one_portal = strategy['one_portal']
     except: pass
@@ -3536,7 +3547,7 @@ def activateMap():
 
   # if dont have any better map for explore, activate mission, buy maps from kirak
   if mapper.atlas_explorer is True:
-    if maps_we_can_run_in_inventory[0].name in poe_bot.game_data.completed_atlas_maps.getCompletedMaps() and any(list(map(lambda mission_count: mission_count != 0, map_device.kirak_missions_count))):
+    if maps_we_can_run_in_inventory[0].name in poe_bot.game_data.completed_atlas_maps.getCompletedMaps() and False:  # Disabled master missions
       print(f'mapper.atlas_explorer is True and best map is completed, activating kirak mission and buying new maps')
       activated_map = mapper.activateKiracMissionMap()
       poe_bot.helper_functions.waitForNewPortals()

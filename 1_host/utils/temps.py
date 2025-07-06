@@ -149,8 +149,8 @@ class MapperSession(TempSkeleton):
   filename = 'mapper_session.json'
   temp_name_for_display = 'MapperSession'
   def __init__(self, unique_id: str, temp_folder_dir: str = './temp', reset: bool = False, session_duration = '16h'):
+    self.session_duration = session_duration  # Set this BEFORE calling super()
     super().__init__(unique_id, temp_folder_dir, reset)
-    self.session_duration = session_duration
   
 
   def generateSession(self): #['12h', '16h', '20h', '24h']
